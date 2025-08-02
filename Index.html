@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shalom's Portfolio - Web Developer & Tech Advocate">
+    <title>Shalom's Portfolio</title>
+    <style>
+        /* ===== Global Reset ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #fff6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* ===== Header ===== */
+        header {
+            background: linear-gradient(135deg, #ff80ab, #f8bbd0);
+            color: black;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        nav {
+            margin-top: 1.5rem;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: underline;
+            margin: 0 1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            text-underline-offset: 5px;
+        }
+
+        /* ===== Sections ===== */
+        section {
+            padding: 3rem 10%;
+        }
+
+        h2 {
+            color: #d81b60;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            text-align: center;
+        }
+
+        .beyond-tech {
+            background: #fff0f5;
+            border-left: 4px solid #ff80ab;
+            padding: 1rem;
+            margin-top: 1.5rem;
+            border-radius: 8px;
+            font-style: italic;
+        }
+
+        /* ===== Skills & Interests ===== */
+        .list-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 1rem;
+        }
+
+        .list-container span, 
+        .interests-list li {
+            background: #ffe4ec;
+            padding: 0.6rem 1.2rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: transform 0.2s ease;
+            list-style: none;
+            text-align: center;
+        }
+
+        .list-container span:hover, 
+        .interests-list li:hover {
+            transform: translateY(-3px);
+            background: #ffcddc;
+        }
+
+        /* ===== Projects ===== */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            background: white;
+            border: 1px solid #f3c1d3;
+            border-radius: 10px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card h3 {
+            color: #ff4081;
+            margin-bottom: 0.8rem;
+        }
+
+        .project-link {
+            display: inline-block;
+            color: #ff4081;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 0.5rem;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: #ff4081 ;
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border-radius: 5px;
+            margin: 0.5rem;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.3s ease;
+        }
+        
+        .download-btn:hover {
+            background: #ff80ab ;
+        }
+        
+        .download-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 1.5rem 0;
+        }
+
+        /* ===== Contact Form ===== */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1.2rem;
+            border: 2px solid #ff4081;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .contact-form button {
+            background: #ff80ab;
+            color: black;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            font-size: 1.2rem;
+            font-weight: 500;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .contact-form button:hover {
+            background: #ff4081;
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            text-align: center;
+            background: #f8bbd0;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            color: black;
+            margin: 0 0.7rem;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            transform: translateY(-3px);
+            color: #ffebee;
+        }
+
+        /* Avatar */
+        .avatar-placeholder {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 1rem auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            background: #f8bbd0;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="avatar-placeholder" aria-label="Profile Avatar">🎀🤍🌺👩‍💻</div>
+    <h1>Hello, I am Shalom 👩‍💻</h1>
+    <p>🎀 Computer Scientist | Web Developer | Women in STEM Advocate | Online Activist 🎀</p>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate Web Developer and a proud advocate for human rights currently pursuing my Computer Science and Applied Mathematics degree. I dream of becoming a leading woman in tech who creates opportunities for those society often leaves behind.</p>
+    <p>For me, coding is about building hope, inspiring change, and touching hearts while creating sustainable solutions that can change the world.</p>
+    <div class="beyond-tech">
+        <span class="icon">🌸</span><strong>What Inspires Me?</strong>Well,my Mother,to tell you my story, I have to tell you her's. I have been raised by a woman who got less than she deserved,everytime.Who gave up her dreams for her husband, for her kids always for anyone but herself.She was confined to being a mother, a wife,to service that she lost touch with what she wanted for herself. I know that is the story for so many other women.That is why I dream, to break tradition, to want more, not only for myself but for her and for all the things she never got to become. To  show all the young girls out there that it is possible!That there dreams are not too big.
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <p><i>Programming Languages:</i></p>
+    <div class="list-container">
+        <span>Java</span>
+        <span>Python</span>
+        <span>JavaScript</span>
+        <span>HTML5</span>
+        <span>C#</span>
+        <span>CSS3</span>
+    </div>
+
+    <p><i>Other Relevant Skills:</i></p>
+    <div class="list-container">
+        <span>Web Development</span>
+        <span>Data Analysis</span>
+        <span>UI/UX Design</span>
+        <span>Version Control (Git)</span>
+        <span>Computer Security & Cryptography</span>
+        <span>Discrete Mathematics</span>
+    </div>
+</section>
+
+<section id="education">
+    <h2>Educational Background</h2>
+    <p>Currently pursuing a Bachelor's Degree in Computer Science And Applied Mathematics at Karatina University.</p>
+    <p>Certificate in Software Engineering Essentials at Power Learn Project (PLP) Africa</p>
+    <p><a href="https://docs.google.com/document/d/1QZ1OOYTvGMsGPxlQTP4bSnmdfqbCX7yK/edit?usp=drive_link&ouid=103908453910311402335&rtpof=true&sd=true" class="download-btn" target="_blank">📄 View My CV</a></p>
+</section>
+
+<section id="interests">
+    <h2>Interests</h2>
+    <ul class="interests-list list-container">
+        <li>Tech for Social Good</li>
+        <li>Mental Health Awareness</li>
+        <li>Human Rights Activism</li>
+        <li>Open Source Projects</li>
+        <li>Creative Writing</li>
+        <li>Digital Art</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="project-card">
+            <h3>Period Tracker 💖</h3>
+            <p>A user-friendly app that tracks menstrual cycles, symptoms, moods, and predicts next possible period dates.</p>
+            <a href="https://github.com/Nehema-Shalom/period_tracker" class="project-link">🔗 View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Simple Calculator</h3>
+            <p>A beginner-friendly project built using HTML, CSS, and JavaScript that performs basic arithmetic operations.</p>
+            <a href="https://github.com/Nehema-Shalom/simple_python_calculator" class="project-link">🔗 View Project</a>
+        </div>
+    </div>
+</section>
+
+<section id="dreams">
+    <h2>Future Dream Projects</h2>
+    <div class="project-card">
+        <h3>Community Tech Hub</h3>
+        <p>I aspire to build a platform that connects youths in marginalized communities with mentorship programs and free tech education, opening doors to brighter futures. 💕</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me 🌺</h2>
+    <form class="contact-form" action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <div class="social-links">
+        <a href="https://github.com/Nehema-Shalom">GitHub</a>
+        <a href="https://www.linkedin.com/in/nehema-shalom">LinkedIn</a>
+        <a href="https://www.twitter/Shalom">Twitter</a>
+        <a href="https://www.instagram.com/sugarr_.n_spicee">Instagram</a>
+    </div>
+    <p>☎️ +254713660431</p>
+    <p>Nairobi, Kenya</p>
+    <p>&copy; 2025 Shalom's Portfolio. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
