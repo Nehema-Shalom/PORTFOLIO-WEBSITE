@@ -1,6 +1,7 @@
  Shalom's Portfolio Website
  
-Welcome to my personal portfolio website! 🎀 This project showcases my skills, projects, and ambitions as a Computer Science student, aspiring woman in tech, and advocate for positive change through technology.
+Welcome to my personal portfolio website! 
+This project showcases my skills, projects, and ambitions as a Computer Science student, aspiring woman in tech, and advocate for positive change through technology.
 
 Project Overview
 This website is a simple, responsive, and lightweight personal portfolio built with:
@@ -23,10 +24,9 @@ Skills Section: Programming languages and other tech skills I’m proficient in.
 
 View My CV: Linked directly via Google Drive for quick access.
 
- Live Preview
-👉 Click Here to View My Portfolio
 
 ⚙️ How to Use
+
 Clone this repository:
 
 git clone https://github.com/Nehema-Shalom/PORTFOLIO-WEBSITE.git
