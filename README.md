@@ -13,14 +13,14 @@ This is my personal portfolio website showcasing my skills, projects, and aspira
 
 - **Frontend**: HTML5, CSS3
 - **Design**: Custom CSS with responsive layout
-- **Hosting**: *(Add where you host this - GitHub Pages, Netlify, Vercel, etc.)*
+- **Hosting**: *Github*
 
 ## Features
 
 1. **About Me Section**: Personal introduction and inspiring story
 2. **Skills Showcase**: Interactive skill tags with hover effects
 3. **Project Gallery**: Cards displaying completed and dream projects
-4. **Contact Form**: Functional form to reach out (needs backend integration)
+4. **Contact Form**: Functional form to reach out
 5. **Responsive Design**: Works on mobile, tablet, and desktop
 
 ## 🚀 Getting Started
