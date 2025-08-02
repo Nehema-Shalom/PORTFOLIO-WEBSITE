@@ -1,4 +1,5 @@
  Shalom's Portfolio Website
+ 
 Welcome to my personal portfolio website! 🎀 This project showcases my skills, projects, and ambitions as a Computer Science student, aspiring woman in tech, and advocate for positive change through technology.
 
 Project Overview
