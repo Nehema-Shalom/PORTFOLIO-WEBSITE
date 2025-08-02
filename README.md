@@ -1,53 +1,69 @@
- Shalom's Portfolio Website
- 
-Welcome to my personal portfolio website! 
-This project showcases my skills, projects, and ambitions as a Computer Science student, aspiring woman in tech, and advocate for positive change through technology.
+# Shalom's Portfolio Website
 
-Project Overview
-This website is a simple, responsive, and lightweight personal portfolio built with:
-HTML5
-CSS3
+## 🌸 About This Project
 
-It’s designed to be visually appealing while maintaining clean, semantic code.
- Features
-About Me: Learn more about my journey, inspiration, and aspirations.
+This is my personal portfolio website showcasing my skills, projects, and aspirations as a web developer and women in STEM advocate. The website features:
 
-Skills Section: Programming languages and other tech skills I’m proficient in.
+- Responsive design that works on all devices
+- Clean, feminine aesthetic with pink accents
+- Sections for about me, skills, education, projects, and contact information
+- Interactive elements like hover effects and a contact form
 
- Education Background: My academic journey and certifications.
+## Technologies Used
 
- Projects Showcase: Links to my real GitHub projects, like my Period Tracker and Calculator apps.
+- **Frontend**: HTML5, CSS3
+- **Design**: Custom CSS with responsive layout
+- **Hosting**: *(Add where you host this - GitHub Pages, Netlify, Vercel, etc.)*
 
- Future Dreams: Projects I aspire to build in the future.
+## Features
 
- Contact Form: Easy way to connect with me.
+1. **About Me Section**: Personal introduction and inspiring story
+2. **Skills Showcase**: Interactive skill tags with hover effects
+3. **Project Gallery**: Cards displaying completed and dream projects
+4. **Contact Form**: Functional form to reach out (needs backend integration)
+5. **Responsive Design**: Works on mobile, tablet, and desktop
 
-View My CV: Linked directly via Google Drive for quick access.
+## 🚀 Getting Started
+
+### Local Development
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/Nehema-Shalom/portfolio.git
+2.Open index.html in your browser
+ Project Structure
+ portfolio/
+├── index.html          # Main HTML file
+├── README.md           # This documentation file
+
+ How to Contribute
+While this is my personal portfolio, I welcome suggestions and feedback! If you'd like to contribute:
+
+Fork the project
+
+Create your feature branch (git checkout -b feature/AmazingFeature)
+
+Commit your changes (git commit -m 'Add some AmazingFeature')
+
+Push to the branch (git push origin feature/AmazingFeature)
+
+Open a Pull Request
+ Contact Me
+Name: Shalom
+
+Email: (nehemashalom@gmail.com)
+
+Phone: +254713660431
+
+Location: Nairobi, Kenya
+
+Social Media:
 
 
-⚙️ How to Use
+https://github.com/Nehema-Shalom
 
-Clone this repository:
+https://www.linkedin.com/in/nehema-shalom
 
-git clone https://github.com/Nehema-Shalom/PORTFOLIO-WEBSITE.git
-Open the index.html file in your browser.
+https://www.instagram.com/sugarr_.n_spicee
 
-Customize text, images, and links in the HTML and CSS files to suit your personal brand.
-
-🛠 Technologies Used
-HTML5
-
-CSS3 (Vanilla)
-
-📬 Contact Me
-If you'd like to collaborate or connect:
-
-📧 Email: nehemashalom@gmail.com
-
-🌐 LinkedIn
-
-🐙 GitHub
-
-
- “Technology is not just about code, it's about creating change and opening doors for the future.” – Shalom
-
+ License
+This project is open source and available under the MIT License.
