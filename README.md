@@ -58,13 +58,12 @@ Location: Nairobi, Kenya
 
 Social Media:
 
-GitHub
 
-LinkedIn
+https://github.com/Nehema-Shalom
 
-Twitter
+https://www.linkedin.com/in/nehema-shalom
 
-Instagram
+https://www.instagram.com/sugarr_.n_spicee
 
  License
 This project is open source and available under the MIT License.
